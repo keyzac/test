@@ -6,9 +6,9 @@
  * Time: 12:29 AM
  */
 
-require __DIR__ . '/../../domain/service/coverage/createStructure.php';
+require __DIR__ . '/../../domain/service/coverage/analyzeStructure.php';
 
-use app\domain\service\coverage\createStructure;
+use app\domain\service\coverage\analyzeStructure;
 
 class startCoverage
 {
@@ -17,7 +17,7 @@ class startCoverage
      */
     public function start()
     {
-        $structure = new createStructure;
+        $structure = new analyzeStructure;
         $structure->analyzeStructure();
     }
 }
