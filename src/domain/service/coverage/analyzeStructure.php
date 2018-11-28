@@ -44,16 +44,16 @@ class analyzeStructure
                 if ($fileInfo->isFile()) {
                     switch (strtolower($it->getSubPath())) {
                         case 'application/service':
-                            $this->create->createEnvironment($fileInfo, '/application/service');
+                            $this->create->createEnvironment($fileInfo, '/application/service/');
                             break;
                         case 'application/handler/query':
-                            $this->create->createEnvironment($fileInfo, '/application/handler/query');
+                            $this->create->createEnvironment($fileInfo, '/application/handler/query/');
                             break;
                         case 'domain/service':
-                            $this->create->createEnvironment($fileInfo, '/domain/service');
+                            $this->create->createEnvironment($fileInfo, '/domain/service/');
                             break;
                         case 'domain/exception':
-                            $this->create->createEnvironment($fileInfo, '/domain/exception');
+                            $this->create->createEnvironment($fileInfo, '/domain/exception/');
                             break;
                         default:
                             break;
